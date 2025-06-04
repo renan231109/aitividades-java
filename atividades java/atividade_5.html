@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estilos diferentes com querySelectorAll</title>
+  <style>
+    .bloco {
+      width: 150px;
+      height: 100px;
+      margin: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bloco">Bloco 1</div>
+  <div class="bloco">Bloco 2</div>
+  <div class="bloco">Bloco 3</div>
+
+  <script>
+    const blocos = document.querySelectorAll(".bloco");
+
+    blocos[0].style.backgroundColor = "red";
+    blocos[1].style.backgroundColor = "blue";
+    blocos[2].style.backgroundColor = "green";
+  </script>
+
+</body>
+</html>

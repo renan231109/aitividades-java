@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector exemplo</title>
+  <style>
+    .destaque {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="destaque">Texto 1</p>
+  <p class="destaque">Texto 2</p>
+  <p class="destaque">Texto 3</p>
+
+  <script>
+    const primeiroDestaque = document.querySelector(".destaque");
+    primeiroDestaque.style.color = "blue";
+  </script>
+
+</body>
+</html>
